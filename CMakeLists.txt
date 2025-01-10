@@ -32,6 +32,7 @@ add_executable(${PROJECT_NAME}
   src/wiring_for_ros/SPI.cpp
   src/wiring_for_ros/Wire.cpp
   src/wiring_for_ros/Arduino.cpp
+  src/SparkFun_LSM6DS3_Arduino_Library/src/SparkFunLSM6DS3.cpp
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
@@ -72,6 +73,7 @@ include_directories(
   include/${PROJECT_NAME}
   ${SOURCE_DIR}/include
   src/wiring_for_ros/include
+  src/SparkFun_LSM6DS3_Arduino_Library/src
 )
 
 ament_target_dependencies(${PROJECT_NAME} 
